@@ -74,6 +74,7 @@ void Board::autoTrigger(int x, int y)
 	int lowX = 0;
 	int lowY = 0;
 
+/*	Should not check for 0s diagonally.
 	// --
 	if (legal(x - 1, y - 1))
 	{
@@ -100,6 +101,7 @@ void Board::autoTrigger(int x, int y)
 		if (!this->board.at(x - 1).at(y + 1).isTriggered())
 			this->triggerCell(x - 1, y + 1);
 	}
+*/
 
 	// 0-
 	if (legal(x, y - 1))
